@@ -1,0 +1,39 @@
+{
+  "name": "paseo-jira-plugin",
+  "version": "0.1.0",
+  "description": "Paseo plugin for Jira Cloud: browse issues, comment, transition, and create worktrees with agent prompts from issues",
+  "license": "MIT",
+  "author": "Edward Crouch",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/edcrouch/paseo-jira-plugin.git"
+  },
+  "homepage": "https://github.com/edcrouch/paseo-jira-plugin#readme",
+  "bugs": {
+    "url": "https://github.com/edcrouch/paseo-jira-plugin/issues"
+  },
+  "keywords": [
+    "paseo",
+    "paseo-plugin",
+    "jira",
+    "atlassian",
+    "worktree",
+    "ai-agents"
+  ],
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "typecheck": "tsc --noEmit",
+    "test": "node --experimental-strip-types server/adf.test.mjs && node --experimental-strip-types shared/rpc.test.mjs"
+  },
+  "devDependencies": {
+    "@getpaseo/plugin": "0.8.0",
+    "@tanstack/react-query": "^5.90.11",
+    "@types/node": "^22.20.3",
+    "@types/react": "~19.2.0",
+    "react": "19.1.0",
+    "react-native": "0.81.5",
+    "typescript": "^5.9.3",
+    "zod": "^4.4.3"
+  }
+}
